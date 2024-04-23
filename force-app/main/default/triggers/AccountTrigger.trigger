@@ -8,7 +8,7 @@
 trigger AccountTrigger on Account (before insert, after insert) {
     if(Trigger.isBefore & Trigger.isInsert){
         for(Account a : Trigger.new){
-            if(a.Type == null){
+            if(a.Type == null){ 
                 a.Type = 'Prospect';
             }
             if(a.ShippingStreet != null || a.ShippingCity != null || a.ShippingCountry != null || a.ShippingState != null || a.ShippingPostalCode != null){
