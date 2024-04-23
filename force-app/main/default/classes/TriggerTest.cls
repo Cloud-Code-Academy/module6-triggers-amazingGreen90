@@ -22,7 +22,7 @@
 @IsTest
 public with sharing class TriggerTest {
 
-    /*
+    /* 
     * Question 1
     * Account Trigger
     * When an account is inserted change the account type to 'Prospect' if there is no value in the type field.
